@@ -3,176 +3,178 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-
-body,
-header,
-nav,
-main,
-footer,
-form {
-    display: flex;
-}
-
-a {
     color: black;
-    text-decoration: none;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 13px;    
-    flex-flow: column;
-
-    height: 100vh;
-    width: 100vw;
-}
-
-/* Styling for header part */
-header{
-    justify-content: end;
-}
-
-nav {
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-nav a {
-    margin: 0 10px;
-}
-
-svg {
-    width: 25px;
-    padding: 7px;
-    box-sizing: content-box;
-}
-
-svg path {
-    color: rgb(70, 70, 70);
-    fill: currentColor;
-}
-
-svg:hover,
-svg:focus {
-    background-color: rgba(211, 211, 211, 0.305);
-    border-radius: 50%;
-}
-
-nav #userlogo {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: #000;
-}
-
-/* Styling for main part */
-
-main {
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    max-width: 575px;
-    align-self: center;
-}
-
-main #google {
-    height: 150px;
-}
-
-main form {
-    width: inherit;
-    flex-flow: column;
-    align-items: center;
-}
-
-main input[type="text"] {
-    display: block;
-    width: 100%;
-    height: 45px;
-    padding: 5px 100px 5px 40px;
-    border-radius: 25px;
-    font-size: 1rem;
-    border: 1px solid lightgray;
-}
-
-main input[type="text"]:hover, 
-main input[type="text"]:focus {
-    border: 1px solid lightgray;
-    outline: none;
-    box-shadow: 1px 1px 5px lightgray;
-}
-
-.buttons {
-    border: 1px solid transparent;
-    margin: 1.5rem 0.3rem;
-    background-color: rgba(243, 243, 243, 0.822);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.buttons:hover,
-.buttons:focus {
-    border: 1px solid lightgray;
-    outline: none;
-    box-shadow: 0 1px 1px lightgray;
-}
-
-main #diff-lang ul{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-}
-
-main #diff-lang li {
-    padding: 2px 5px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
 
-main #diff-lang a{
-    color: blue;
-}
-
-main #diff-lang a:hover {
+a:hover{
     text-decoration: underline;
 }
 
-
-/* Styling for footer part */
-footer{
-    flex-flow: column;
+.flex-column {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     justify-content: center;
-    background-color: rgba(211, 211, 211, 0.382);
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 0;
 }
 
-footer div,footer ul {
+.flex-row {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding: 20px 0;
+    justify-content: center;
 }
 
-footer ul {
-    padding: 0;
+.toend {
+    align-items: flex-end;
+    max-height: 50px;
 }
 
-footer #firstpart {
-    border-bottom: 1px solid lightgray;
+header nav {
+    justify-content: space-evenly;
+    padding: 5px 10px;
 }
 
-footer #secondpart {
-    justify-content: space-between;
+nav a {
+    padding: 10px;
 }
 
-footer p,footer a {
-    padding: 0 15px;
+#svg {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#svg:hover,
+#svg:focus{
+    background-color: rgba(211, 211, 211, 0.301);
+}
+
+#apps-drawer {
+    width: 25px;
+    color: gray;
+    fill: currentColor;
+}
+
+#userlogo img{
+    width: 33px;
+}
+
+/* Main body text */
+#google {
+    width: 100%;
+    max-width: 280px;
+}
+
+main form {
+    width: 100%;
+    max-width: 600px;
+}
+
+main .inputbox{
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    height: 45px;
+    outline: none;
+}
+
+main .inputbox:hover,
+main .inputbox:focus {
+    box-shadow: 1px 1px 7px lightgray;
+}
+
+.inputbox::before{
+    background-image: url(../images/search.svg);
+    content: "";
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.inputbox::after{
+    background-image: url(../images/mic.svg);
+    content: "";
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+.inputbox input {
+    height: 100%;
+    width: 85%;
+    font-size: 1.1rem;
+    padding: 2px 50px 2px 0;
+    outline: none;
+    border: none;
+}
+
+.buttons{
+    background-color: rgba(211, 211, 211, 0.295);
+    border: 1px solid transparent;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 30px 3px;
+}
+
+.buttons:hover,
+.buttons:focus{
+    border: 1px solid lightgray;
+    box-shadow: 0 1px lightgray;
+}
+
+#diff-lang li {
+    margin: 0 5px;
+}
+
+#diff-lang a {
+    color: blue;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(211, 211, 211, 0.500);
+    width: 100%;
+}
+
+footer p, footer a{
     font-size: 14px;
     color: gray;
+}
+
+footer div{
+    width: 100%;
+    padding: 5px;
+}
+
+#firstpart, #secondpart{
+    padding: 15px;
+}
+
+#firstpart {
+    border-bottom: 1px solid gray;
+}
+
+#secondpart{
+    justify-content: space-between;
+    border: none;
+    outline: none;
+}
+
+#secondpart a {
+    margin: 15px;
 }

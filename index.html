@@ -10,23 +10,27 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="flex-column toend">
+        <nav  class="flex-row">
             <a href="#gmail">Gmail</a>
             <a href="#images">Images</a>
-            <a href="#9dotlogo">
+            
+            <a href="#" id="svg">
                 <svg id="apps-drawer" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
             </a>
-            <a href="#user-avatar-circle" id="userlogo">
+            <a href="https://github.com/mr7kitkat" id="userlogo">
+                <img src="./images/github-logo.png" alt="">
             </a>
         </nav>
     </header>
 
-    <main>
+    <main class="flex-column">
         <img src="./images/Google-logo.png" alt="Google Logo" id="google">
         
-        <form action="https://www.google.co.in/search" method="get">
-            <input type="text" name="q" autocomplete="off">
+        <form action="https://www.google.co.in/search" method="get" class="flex-column">
+            <label for="searchbar"  class="flex-column inputbox">
+                <input type="text" name="q" autocomplete="off" id="searchbar">
+            </label>
             <div>
                 <input type="submit" value="Google Search" class="buttons">
                 <input type="button" value="I'm feeling lucky" class="buttons">
@@ -34,7 +38,7 @@
         </form>
 
         <div id="diff-lang">
-            <ul>
+            <ul class="flex-row">
                 <li>Google offered in:</li>
                 <li><a href="#hindi">हिन्दी</a></li>
                 <li><a href="">বাংলা</a></li>
@@ -49,25 +53,26 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="flex-column">
         <div id="firstpart">
             <p>India</p>
         </div>
 
-        <div id="secondpart">
-            <ul>
+        <div id="secondpart" class="flex-row">
+            <ul class="flex-row">
                 <li><a href="">About</a></li>
                 <li><a href="">Advertising</a></li>
                 <li><a href="">Business</a></li>
                 <li><a href="">How Search works</a></li>
             </ul>
 
-            <ul>
+            <ul class="flex-row">
                 <li><a href="">Privacy</a></li>
                 <li><a href="">Terms</a></li>
                 <li><a href="">Settings</a></li>
             </ul>
         </div>
     </footer>
+    
 </body>
 </html>
