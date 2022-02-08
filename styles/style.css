@@ -81,6 +81,7 @@ main .inputbox{
     border: 1px solid lightgray;
     height: 45px;
     outline: none;
+    background-color: transparent;
 }
 
 main .inputbox:hover,
