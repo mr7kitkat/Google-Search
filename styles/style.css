@@ -119,6 +119,8 @@ main .inputbox:focus {
     padding: 2px 50px 2px 0;
     outline: none;
     border: none;
+    background-color: transparent;
+
 }
 
 .buttons{
