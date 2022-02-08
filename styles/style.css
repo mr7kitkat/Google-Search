@@ -178,3 +178,14 @@ footer div{
 #secondpart a {
     margin: 15px;
 }
+
+@media (max-width: 667px){
+    #secondpart {
+        flex-flow: column wrap;
+        place-content: center;
+    }
+
+    #secondpart ul {
+        padding: 10px 0;
+    }
+}
