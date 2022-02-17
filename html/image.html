@@ -4,53 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <link rel="icon" type="image/x-icon" href="./images/fevicon.ico">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Google Images</title>
+    <link rel="icon" type="image/x-icon" href="../images/fevicon.ico">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header class="flex-column toend">
         <nav  class="flex-row">
-            <a href="#gmail">Gmail</a>
-            <a href="./html/image.html">Images</a>
-            
             <a href="#" id="svg">
                 <svg id="apps-drawer" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
             </a>
             <a href="https://github.com/mr7kitkat" id="userlogo">
-                <img src="./images/github-logo.png" alt="">
+                <img src="../images/github-logo.png" alt="">
             </a>
         </nav>
     </header>
 
     <main class="flex-column">
-        <img src="./images/Google-logo.png" alt="Google Logo" id="google">
-        
-        <form action="https://www.google.co.in/search" method="get" class="flex-column">
-            <label for="searchbar"  class="flex-column inputbox search">
-                <input type="text" name="q" autocomplete="off" id="searchbar">
+        <img src="../images/Google-logo.png" alt="Google Logo" id="google-img">
+        <span id="img-bottom">images</span>
+        <form action="https://www.google.co.in/search" method="get" class="flex-column goup">
+            <label for="searchbar"  class="flex-column inputbox">
+                <input type="text" name="tbm" value="isch" style="display: none;">
+                <input type="text" name="q" autocomplete="off" id="imagesearch">
+                <div id="searchbar-icons">
+                    <img src="../images/camera.svg" alt="">
+                    <img src="../images/mic.svg" alt="">
+                    <input type="submit" value="" id="image-search-button">
+                </div>
             </label>
-            <div>
-                <input type="submit" value="Google Search" class="buttons">
-                <input type="button" value="I'm feeling lucky" class="buttons">
-            </div>
+            
         </form>
 
-        <div id="diff-lang">
-            <ul class="flex-row">
-                <li>Google offered in:</li>
-                <li><a href="#hindi">हिन्दी</a></li>
-                <li><a href="">বাংলা</a></li>
-                <li><a href="">తెలుగు</a></li>
-                <li><a href="">मराठी</a></li>
-                <li><a href="">தமிழ்</a></li>
-                <li><a href="">ગુજરાતી</a></li>
-                <li><a href="">ಕನ್ನಡ</a></li>
-                <li><a href="">മലയാളം</a></li>
-                <li><a href="">ਪੰਜਾਬੀ</a></li>
-            </ul>
-        </div>
     </main>
 
     <footer class="flex-column">
@@ -74,5 +60,6 @@
         </div>
     </footer>
     
+
 </body>
 </html>
