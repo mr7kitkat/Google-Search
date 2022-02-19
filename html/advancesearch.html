@@ -29,28 +29,27 @@
 
     <main class="flex-column">
         <h1>Advanced Search</h1>
-        <hr>
 
         <form action="">
             <section>
                 <h3>Find Pages with........</h3>
-                <span class="third-col-item"> To do this in the search box.</span>    
+                <span class="third-col-item hide"> To do this in the search box.</span>    
 
                 <label for="allwords">all these words:</label>
                 <input type="text" name="allwords" id="allwords">
-                <span> Type the important words: <span class="mono">tri-colour rat terrier</span></span>    
+                <span class="hide"> Type the important words: <span class="mono">tri-colour rat terrier</span></span>    
 
                 <label for="exactword"> this exact word or phrase:</label>
                 <input type="text" name="exactword" id="exactword">
-                <span>  Put exact words in quotes: <span class="mono">"rat terrier"</span></span>    
+                <span class="hide">  Put exact words in quotes: <span class="mono">"rat terrier"</span></span>    
 
                 <label for="anyword"> any of these words:</label>
                 <input type="text" name="anyword" id="anyword">
-                <span>  Type <span class="mono">OR</span> between all the words you want: <span class="mono">miniature OR standard</span></span>
+                <span class="hide">  Type <span class="mono">OR</span> between all the words you want: <span class="mono">miniature OR standard</span></span>
 
                 <label for="noword"> none of these words:</label>
                 <input type="text" name="noword" id="noword">
-                <span>  Put a minus sign just before words that you don't want: <span class="mono">-rodent, -"Jack Russell"</span></span>    
+                <span class="hide">  Put a minus sign just before words that you don't want: <span class="mono">-rodent, -"Jack Russell"</span></span>    
                 
                 <label for="number"> numbers ranging from:</label>
                 <div>
@@ -58,7 +57,7 @@
                     <span>to</span>
                     <input type="number" name="maxrange" id="num-max">
                 </div>
-                <span>  Put two full stops between the numbers and add a unit of measurement: <span class="mono">10..35 kg, £300..£500, 2010..2011</span>
+                <span class="hide">  Put two full stops between the numbers and add a unit of measurement: <span class="mono">10..35 kg, £300..£500, 2010..2011</span>
                 </span>    
             </section>
 
@@ -69,13 +68,13 @@
                 <select name="languages" id="languages">
                     <option value="any language" selected>any language</option>
                 </select>
-                <span>Find pages in the language that you select.</span>
+                <span class="hide">Find pages in the language that you select.</span>
 
                 <label for="region"> region:</label>
                 <select name="region" id="region">
                     <option value="any" selected>any region</option>
                 </select>
-                <span>Find pages published in a particular region.</span>
+                <span class="hide">Find pages published in a particular region.</span>
 
                 <label for="last-update"> last update:</label>
                 <select name="last-update" id="last-update">
@@ -85,11 +84,11 @@
                     <option value="a-month-ago">upto a month ago</option>
                     <option value="a-year-ago">upto a year ago</option>
                 </select>
-                <span>Find pages updated within the time that you specify.</span>
+                <span class="hide">Find pages updated within the time that you specify.</span>
 
                 <label for="domain">site or domain:</label>
                 <input type="url" name="domain" id="domain">
-                <span>Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</span>
+                <span class="hide">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</span>
                 
                 <label for="terms-appearing"> terms appearing:</label>
                 <select name="terms-appearing" id="terms-appearing">
@@ -99,7 +98,7 @@
                     <option value="a-month-ago">upto a month ago</option>
                     <option value="a-year-ago">upto a year ago</option>
                 </select>
-                <span>Find pages updated within the time that you specify.</span>
+                <span class="hide">Find pages updated within the time that you specify.</span>
 
                 
                 <label for="safe-search"><a href="">SafeSearch:</a></label>
@@ -107,14 +106,14 @@
                     <option value="show-explicit-result" selected>Show explicit result</option>
                     <option value="hide-explicit-result">Hide explicit result</option>
                 </select>
-                <span>Tell <a href="">SafeSearch</a> whether to filter sexually explicit content.</span>
+                <span class="hide">Tell <a href="">SafeSearch</a> whether to filter sexually explicit content.</span>
 
 
                 <label for="file-type"> file type:</label>
                 <select name="file-type" id="file-type">
                     <option value="any-format" selected>any format</option>
                 </select>
-                <span>Find pages in the format that you prefer.</span>
+                <span class="hide">Find pages in the format that you prefer.</span>
 
 
                 <label for="usage-rights"><a href="">usage rights:</a></label>
@@ -122,19 +121,22 @@
                     <option value="not-filtered" selected>Not filtered by licence</option>
                     <option value="free-to-use">Free to use or share</option>
                 </select>
-                <span>Find pages that you are free to use yourself.</span>
+                <span class="hide">Find pages that you are free to use yourself.</span>
+
+                <input type="submit" value="Advanced Search">
 
             </section>
-            <input type="submit" value="Advanced Search">
 
         </form>
 
-        <section>
+        <section id="links" class="flex-column">
             <h3>You can also...</h3>
-            <a href="">Find pages that are similar to a URL</a>
-            <a href="">Search pages that you've visited</a>
-            <a href="">Use operators in the search box</a>
-            <a href="">Customise your search settings</a>
+            <div>
+                <a href="">Find pages that are similar to a URL</a>
+                <a href="">Search pages that you've visited</a>
+                <a href="">Use operators in the search box</a>
+                <a href="">Customise your search settings</a>
+            </div>
         </section>
     </main>
 
