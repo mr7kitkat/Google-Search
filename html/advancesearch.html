@@ -30,7 +30,7 @@
     <main class="flex-column">
         <h1>Advanced Search</h1>
 
-        <form action="">
+        <form action="https://www.google.co.in/search">
             <section>
                 <h3>Find Pages with........</h3>
                 <div class="sec-col">
@@ -39,34 +39,34 @@
 
                 <label for="allwords">all these words:</label>
                 <div class="sec-col">
-                    <input type="text" name="allwords" id="allwords">
+                    <input type="text" name="as_q" id="allwords">
                     <span class="hide"> Type the important words: <span class="mono">tri-colour rat terrier</span></span>    
                 </div>
 
                 <label for="exactword"> this exact word or phrase:</label>
                 <div class="sec-col">
-                    <input type="text" name="exactword" id="exactword">
+                    <input type="text" name="as_epq" id="exactword">
                     <span class="hide">  Put exact words in quotes: <span class="mono">"rat terrier"</span></span>    
                 </div>
                 
                 <label for="anyword"> any of these words:</label>
                 <div class="sec-col">
-                    <input type="text" name="anyword" id="anyword">
+                    <input type="text" name="as_oq" id="anyword">
                     <span class="hide">  Type <span class="mono">OR</span> between all the words you want: <span class="mono">miniature OR standard</span></span>
                 </div>
                 
                 <label for="noword"> none of these words:</label>
                 <div class="sec-col">
-                    <input type="text" name="noword" id="noword">
+                    <input type="text" name="as_eq" id="noword">
                     <span class="hide">  Put a minus sign just before words that you don't want: <span class="mono">-rodent, -"Jack Russell"</span></span>    
                 </div>
                 
                 <label for="number"> numbers ranging from:</label>
                 <div class="sec-col rangerow">
                     <div class="flex-row range">
-                        <input type="number" name="minrange" id="num-min">
+                        <input type="number" name="as_nlo" id="num-min">
                         <span>to</span>
-                        <input type="number" name="maxrange" id="num-max">
+                        <input type="number" name="as_nhi" id="num-max">
                     </div>
                         <span class="hide">  Put two full stops between the numbers and add a unit of measurement: <span class="mono">10..35 kg, £300..£500, 2010..2011</span></span>   
                 </div>
