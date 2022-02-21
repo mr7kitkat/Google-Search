@@ -33,105 +33,132 @@
         <form action="">
             <section>
                 <h3>Find Pages with........</h3>
-                <span class="third-col-item hide"> To do this in the search box.</span>    
+                <div class="sec-col">
+                    <span class="third-col-item hide"> To do this in the search box.</span>    
+                </div>
 
                 <label for="allwords">all these words:</label>
-                <input type="text" name="allwords" id="allwords">
-                <span class="hide"> Type the important words: <span class="mono">tri-colour rat terrier</span></span>    
+                <div class="sec-col">
+                    <input type="text" name="allwords" id="allwords">
+                    <span class="hide"> Type the important words: <span class="mono">tri-colour rat terrier</span></span>    
+                </div>
 
                 <label for="exactword"> this exact word or phrase:</label>
-                <input type="text" name="exactword" id="exactword">
-                <span class="hide">  Put exact words in quotes: <span class="mono">"rat terrier"</span></span>    
-
+                <div class="sec-col">
+                    <input type="text" name="exactword" id="exactword">
+                    <span class="hide">  Put exact words in quotes: <span class="mono">"rat terrier"</span></span>    
+                </div>
+                
                 <label for="anyword"> any of these words:</label>
-                <input type="text" name="anyword" id="anyword">
-                <span class="hide">  Type <span class="mono">OR</span> between all the words you want: <span class="mono">miniature OR standard</span></span>
-
+                <div class="sec-col">
+                    <input type="text" name="anyword" id="anyword">
+                    <span class="hide">  Type <span class="mono">OR</span> between all the words you want: <span class="mono">miniature OR standard</span></span>
+                </div>
+                
                 <label for="noword"> none of these words:</label>
-                <input type="text" name="noword" id="noword">
-                <span class="hide">  Put a minus sign just before words that you don't want: <span class="mono">-rodent, -"Jack Russell"</span></span>    
+                <div class="sec-col">
+                    <input type="text" name="noword" id="noword">
+                    <span class="hide">  Put a minus sign just before words that you don't want: <span class="mono">-rodent, -"Jack Russell"</span></span>    
+                </div>
                 
                 <label for="number"> numbers ranging from:</label>
-                <div>
-                    <input type="number" name="minrange" id="num-min">
-                    <span>to</span>
-                    <input type="number" name="maxrange" id="num-max">
+                <div class="sec-col rangerow">
+                    <div class="flex-row range">
+                        <input type="number" name="minrange" id="num-min">
+                        <span>to</span>
+                        <input type="number" name="maxrange" id="num-max">
+                    </div>
+                        <span class="hide">  Put two full stops between the numbers and add a unit of measurement: <span class="mono">10..35 kg, £300..£500, 2010..2011</span></span>   
                 </div>
-                <span class="hide">  Put two full stops between the numbers and add a unit of measurement: <span class="mono">10..35 kg, £300..£500, 2010..2011</span>
-                </span>    
+                
             </section>
 
             <section>
                 <h3>Then narrow your results by...</h3>
 
                 <label for="languages"> language:</label>
-                <select name="languages" id="languages">
-                    <option value="any language" selected>any language</option>
-                </select>
-                <span class="hide">Find pages in the language that you select.</span>
-
+                <div class="sec-col">
+                    <select name="languages" id="languages">
+                        <option value="any language" selected>any language</option>
+                    </select>
+                    <span class="hide">Find pages in the language that you select.</span>    
+                </div>
+                
                 <label for="region"> region:</label>
-                <select name="region" id="region">
-                    <option value="any" selected>any region</option>
-                </select>
-                <span class="hide">Find pages published in a particular region.</span>
-
+                <div class="sec-col">
+                    <select name="region" id="region">
+                        <option value="any" selected>any region</option>
+                    </select>
+                    <span class="hide">Find pages published in a particular region.</span>    
+                </div>
+                
                 <label for="last-update"> last update:</label>
-                <select name="last-update" id="last-update">
-                    <option value="anytime" selected>anytime</option>
-                    <option value="last-24-hours">last 24 hours</option>
-                    <option value="a-week-ago">upto a week ago</option>
-                    <option value="a-month-ago">upto a month ago</option>
-                    <option value="a-year-ago">upto a year ago</option>
-                </select>
-                <span class="hide">Find pages updated within the time that you specify.</span>
-
+                <div class="sec-col">
+                    <select name="last-update" id="last-update">
+                        <option value="anytime" selected>anytime</option>
+                        <option value="last-24-hours">last 24 hours</option>
+                        <option value="a-week-ago">upto a week ago</option>
+                        <option value="a-month-ago">upto a month ago</option>
+                        <option value="a-year-ago">upto a year ago</option>
+                    </select>
+                    <span class="hide">Find pages updated within the time that you specify.</span>    
+                </div>
+                
                 <label for="domain">site or domain:</label>
-                <input type="url" name="domain" id="domain">
-                <span class="hide">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</span>
+                <div class="sec-col">
+                    <input type="url" name="domain" id="domain">
+                    <span class="hide">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</span>
+                </div>
                 
                 <label for="terms-appearing"> terms appearing:</label>
-                <select name="terms-appearing" id="terms-appearing">
-                    <option value="anywhere" selected>anywhere in the page</option>
-                    <option value="last-24-hours">last 24 hours</option>
-                    <option value="a-week-ago">upto a week ago</option>
-                    <option value="a-month-ago">upto a month ago</option>
-                    <option value="a-year-ago">upto a year ago</option>
-                </select>
-                <span class="hide">Find pages updated within the time that you specify.</span>
-
+                <div class="sec-col">
+                    <select name="terms-appearing" id="terms-appearing">
+                        <option value="anywhere" selected>anywhere in the page</option>
+                        <option value="last-24-hours">last 24 hours</option>
+                        <option value="a-week-ago">upto a week ago</option>
+                        <option value="a-month-ago">upto a month ago</option>
+                        <option value="a-year-ago">upto a year ago</option>
+                    </select>
+                    <span class="hide">Find pages updated within the time that you specify.</span>    
+                </div>
                 
                 <label for="safe-search"><a href="">SafeSearch:</a></label>
-                <select name="safe-search" id="safe-search">
-                    <option value="show-explicit-result" selected>Show explicit result</option>
-                    <option value="hide-explicit-result">Hide explicit result</option>
-                </select>
-                <span class="hide">Tell <a href="">SafeSearch</a> whether to filter sexually explicit content.</span>
-
-
+                <div class="sec-col">
+                    <select name="safe-search" id="safe-search">
+                        <option value="show-explicit-result" selected>Show explicit result</option>
+                        <option value="hide-explicit-result">Hide explicit result</option>
+                    </select>
+                    <span class="hide">Tell <a href="">SafeSearch</a> whether to filter sexually explicit content.</span>    
+                </div>
+                
                 <label for="file-type"> file type:</label>
-                <select name="file-type" id="file-type">
-                    <option value="any-format" selected>any format</option>
-                </select>
-                <span class="hide">Find pages in the format that you prefer.</span>
-
-
+                <div class="sec-col">
+                    <select name="file-type" id="file-type">
+                        <option value="any-format" selected>any format</option>
+                    </select>
+                    <span class="hide">Find pages in the format that you prefer.</span>    
+                </div>
+                
                 <label for="usage-rights"><a href="">usage rights:</a></label>
-                <select name="usage-rights" id="usage-rights">
-                    <option value="not-filtered" selected>Not filtered by licence</option>
-                    <option value="free-to-use">Free to use or share</option>
-                </select>
-                <span class="hide">Find pages that you are free to use yourself.</span>
-
-                <input type="submit" value="Advanced Search">
-
+                <div class="sec-col">
+                    <select name="usage-rights" id="usage-rights">
+                        <option value="not-filtered" selected>Not filtered by licence</option>
+                        <option value="free-to-use">Free to use or share</option>
+                    </select>
+                    <span class="hide">Find pages that you are free to use yourself.</span>    
+                </div>
+                
+                <div id="label"></div>
+                <div class="sec-col">
+                    <input class="submitbutton" type="submit" value="Advanced Search">
+                </div>
             </section>
 
         </form>
 
-        <section id="links" class="flex-column">
+        <section id="links">
             <h3>You can also...</h3>
-            <div>
+            <div class="flex-column">
                 <a href="">Find pages that are similar to a URL</a>
                 <a href="">Search pages that you've visited</a>
                 <a href="">Use operators in the search box</a>
