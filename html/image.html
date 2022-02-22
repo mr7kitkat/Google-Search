@@ -18,6 +18,12 @@
             <a href="https://github.com/mr7kitkat" id="userlogo">
                 <img src="../images/github-logo.png" alt="">
             </a>
+
+            <div class="glinks">
+                <a href="../index.html">Google Homepage</a>
+                <a href="./image.html">Google Image</a>
+                <a href="./advancesearch.html">Google Advanced Search</a>
+            </div>
         </nav>
     </header>
 
@@ -60,6 +66,14 @@
         </div>
     </footer>
     
+    <script>
+        const menu = document.querySelector('#svg');
+        const glinks = document.querySelector('.glinks');
+        menu.addEventListener('click', ()=> {
+            glinks.classList.toggle('show');
+        });
+
+    </script>
 
 </body>
 </html>

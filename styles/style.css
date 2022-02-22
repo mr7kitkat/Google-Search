@@ -62,6 +62,36 @@ nav a {
 
 #userlogo img{
     width: 33px;
+    position: relative;
+}
+
+.glinks {
+    width: 180px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.glinks a{
+    display: block;
+    padding: 5px 10px; 
+    background: rgba(0, 0, 0, 0.295);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.glinks a:hover{
+    background-color: black;
+    transition: all 0.5s linear;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
 }
 
 /* Main body text */
