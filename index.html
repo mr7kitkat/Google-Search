@@ -38,7 +38,7 @@
             </label>
             <div>
                 <input type="submit" value="Google Search" class="buttons">
-                <input type="button" value="I'm feeling lucky" class="buttons">
+                <input type="button" value="I'm feeling lucky" class="buttons" id="iflucky">
             </div>
         </form>
 
@@ -87,6 +87,10 @@
                 glinks.classList.toggle('show');
             });
 
+            const imfellinglucky = document.querySelector('#iflucky');
+            imfellinglucky.addEventListener('click', ()=> {
+                window.location.replace('https://www.google.com/doodles');
+            });
     </script>
 </body>
 </html>
